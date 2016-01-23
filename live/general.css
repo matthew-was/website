@@ -1,0 +1,53 @@
+body {
+    text-align: justify;
+    font-family: Ariel, Helvetica, sans-serif;
+    color: #303030;
+}
+
+.break {
+    clear: both;
+}
+
+.topbar {
+    margin: 0 auto;
+    width: 640px;
+}
+
+.topmenu {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+.link {
+    color: #0783B6;
+}
+
+.link:hover {
+    color: firebrick;
+}
+
+.inline_email {
+    color: #202020;
+}
+
+.inline_email:hover{
+    color: firebrick;
+}
+
+
+.main {
+    width: 640px;
+    margin:0 auto;
+    margin-top: 10vmin;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
