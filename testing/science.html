@@ -55,25 +55,6 @@
                     collapsible: true,
                     active: false,
                     heightStyle: "content",
-                    beforeActivate: function() {
-                        var stuff = typeof(document.getElementsByClassName("ui-accordion-content-active")[0]);
-                        if (typeof(document.getElementsByClassName("ui-accordion-content-active")[0]) == "undefined") {
-                            document.getElementById("accordionHead").innerHTML="Click here to hide my thesis abstract";
-                        } else {
-                            document.getElementById("accordionHead").innerHTML="Click here to view my thesis abstract";
-                        }
-                    }
-                });
-            });
-
-        </script>
-
-        <script>
-            $(function() {
-                $( "#accordion" ).accordion({
-                    collapsible: true,
-                    active: false,
-                    heightStyle: "content",
                     activate: function() {
                         if (typeof($("#accordion").accordion("option", "active")) == "number") {
                             $("#accordionHead").html("Click here to hide my thesis abstract");
