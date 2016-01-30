@@ -46,9 +46,27 @@
                 border: none;
                 margin: 0;
                 padding: 0px 20px 0 20px !important;
-            }
 
         </style>
+
+        <script>
+            $(function() {
+                $( "#accordion" ).accordion({
+                    collapsible: true,
+                    active: false,
+                    heightStyle: "content",
+                    beforeActivate: function() {
+                        var stuff = typeof(document.getElementsByClassName("ui-accordion-content-active")[0]);
+                        if (typeof(document.getElementsByClassName("ui-accordion-content-active")[0]) == "undefined") {
+                            document.getElementById("accordionHead").innerHTML="Click here to hide my thesis abstract";
+                        } else {
+                            document.getElementById("accordionHead").innerHTML="Click here to view my thesis abstract";
+                        }
+                    }
+                });
+            });
+
+        </script>
 
         <script>
             $(function() {
@@ -123,8 +141,5 @@
             <p><a href="https://uk.linkedin.com/pub/matthew-wasbrough/45/3a/674" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Matthew Wasbrough's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;View Matthew Wasbrough's profile</span></a></p>
 
         </div>
-
-        <script>
-        </script>
     </body>
 </html>
