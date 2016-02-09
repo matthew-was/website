@@ -29,11 +29,12 @@ body {
     color: firebrick;
 }
 
-.inline_email {
+.inline_link {
     color: #202020;
+    text-decoration: underline;
 }
 
-.inline_email:hover{
+.inline_link:hover{
     color: firebrick;
 }
 
@@ -42,7 +43,7 @@ body {
     max-width: 640px;
     margin:0 auto;
     margin-top: 10vmin;
-    padding: 0 5px 0 5px;
+    padding: 0 20px 0 20px;
 }
 
 p {

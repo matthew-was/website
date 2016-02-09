@@ -2,14 +2,40 @@
 <!doctype html>
 <html>
     <head>
-        <title>Matthew's Homepage</title>
+        <title>Matthew Wasbrough Homepage</title>
 
         <meta charset="utf-8" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="general.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        
+        <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 
         <style>
+            
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            h1 {
+                margin: 0 auto;
+                font-family: 'Architects Daughter';
+                font-size: 5em;
+                font-size: 6vw;
+                text-align: center;
+                padding-top: 15%;
+            }
 
         </style>
 
@@ -18,34 +44,38 @@
     </head>
 
     <body>
+        <div id="container">
+            <div class="navbar navbar-default">
+                <div class="nav-container">
+                    <div id="navbar-header">
+                        <a href="index.html" class="navbar-brand">MJWasbrough.com</a>
 
-        <div class="topbar">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" />
 
-        </div>
+                        <span class="sr-only">Toggle navigation</span>
 
-        <div class="break"></div>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
 
-        <div class="main">
+                    </div>
 
-            <h1 style="text-align:left">The home page of Matthew Wasbrough</h1>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
 
-            <h3>About Me</h3>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="webdev.html">Web Development</a></li>
+                            <li><a href="science.html">Science</a></li>
 
-            <p>I am a web developer based in South Oxfordshire. I am currently learning the trade aiming to concentrate on understanding Javascript although also learning Ruby on Rails.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-            <p>Prior to becoming a web developer I earned a Doctorate and an undergraduate Masters in Chemistry, both from the University of Bath. Following the completion of my Doctorate I worked at the National Institute of Standards and Technology, Center for Neutron Research as part of the Macromolecular and Microstructural Sciences Group. It remains my hope that I will be able to bring my scientific knowledge into my web development work however I have not done this so far. </p>
-
-            <p>Although I currently have limited experience I would be interested in disucssing potential jobs so please feel free to contact me using the methods below.</p>
-
-            <p>&nbsp;</p>
-
-            <p>For more information about my scientific career check out my <a href=science.html class="inline_email">science</a> page.</p>
-
-                <h3>Contact me</h3>
-            <p><a href="mailto:matthew@mjwasbrough.com" class="link">E-mail me</a></p>
-            <p><a href="https://twitter.com/MJWasbrough" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @MJWasbrough</a>
-        </p>
-            <p><a href="https://uk.linkedin.com/pub/matthew-wasbrough/45/3a/674" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Matthew Wasbrough's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;View Matthew Wasbrough's profile</span></a></p>
+            <div id="head">
+                <h1>Matthew Wasbrough<br />Web Developer and Scientist</h1>
+            </div>
+            
         </div>
     </body>
 </html>
