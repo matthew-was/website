@@ -7,7 +7,6 @@
         <meta charset="utf-8" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="general.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <!-- Latest compiled and minified CSS -->
@@ -20,15 +19,18 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         
         <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-
-        <style>
-            h1, h3 {
-                font-family: 'Architects Daughter';
-            }
-
-        </style>
-
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+        <script src="common.js"></script>
+        <link rel="stylesheet" type="text/css" href="general.css" />
+        
+        
+        <script>
+            $(function() {
+                $("#about").addClass("active");
+            });
+        </script>
+        <style></style>
 
     </head>
 
@@ -50,14 +52,7 @@
 
                     </div>
 
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            
-                            <li class="active"><a href="about.html">About Me</a></li>
-                            <li><a href="webdev.html">Web Development</a></li>
-                            <li><a href="science.html">Science</a></li>
-
-                        </ul>
+                    <div class="collapse navbar-collapse" id="navigation">
                     </div>
                 </div>
             </div>
@@ -68,15 +63,12 @@
 
                 <p>I am a web developer based in South Oxfordshire. I am currently learning the trade concentrating on understanding HTML, CSS and Javascript. I am also constantly increasing my skills dependant on requirements, potential areas of further study are MEAN stack, Ruby on Rails, or Swift .</p>
 
-                <p>Prior to becoming a web developer I earned a Doctorate and an undergraduate Masters in Chemistry, both from the University of Bath. Following the completion of my Doctorate I worked at the National Institute of Standards and Technology, Center for Neutron Research as part of the Macromolecular and Microstructural Sciences Group. It remains my hope that I will be able to bring my scientific knowledge into my web development work however I have not done this so far. Further information is available on my <a class="inline_link" href="science.html">science</a> page.</p>
+                <p>Prior to becoming a web developer I earned a Doctorate and an undergraduate Masters in Chemistry, both from the University of Bath. Following the completion of my Doctorate I worked at the National Institute of Standards and Technology, Center for Neutron Research as part of the Macromolecular and Microstructural Sciences Group. It remains my hope that I will be able to bring my scientific knowledge into my web development work however I have not done this so far. Further information is available on my <a class="link" href="science.html">science</a> page.</p>
 
-                <p>Although I currently have limited experience I would be interested in disucssing potential jobs so please feel free to contact me using the methods below. Also please check out my current skills on my <a class="inline_link" href="webdev.html">Web Development</a> page.</p>
-
-                    <h3>Contact me</h3>
-                <p><a href="mailto:matthew@mjwasbrough.com" class="link">E-mail me</a></p>
-                <p><a href="https://twitter.com/MJWasbrough" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @MJWasbrough</a>
-            </p>
-                <p><a href="https://uk.linkedin.com/pub/matthew-wasbrough/45/3a/674" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Matthew Wasbrough's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;View Matthew Wasbrough's profile</span></a></p>
+                <p>Although I currently have limited experience I would be interested in disucssing potential jobs so please feel free to contact me using the methods below. Also please check out my current skills on my <a class="link" href="webdev.html">Web Development</a> page.</p>
+                
+                <div id="contacts"></div>
+                
             </div>
         </div>
     </body>

@@ -2,6 +2,8 @@ body {
     text-align: justify;
     font-family: Ariel, Helvetica, sans-serif;
     color: #303030;
+    margin: 0;
+    padding: 0;
 }
 
 .break {
@@ -22,22 +24,13 @@ body {
 }
 
 .link {
-    color: #0783B6;
+    text-decoration: underline;
+    color: #303030;
 }
 
 .link:hover {
-    color: firebrick;
+    color: firebrick;    
 }
-
-.inline_link {
-    color: #202020;
-    text-decoration: underline;
-}
-
-.inline_link:hover{
-    color: firebrick;
-}
-
 
 .main {
     max-width: 640px;
@@ -53,4 +46,17 @@ p {
 
 h3 {
     margin-bottom: 5px;
+}
+
+h1, h3 {
+    font-family: 'Architects Daughter';
+}
+
+.contact_icons {
+    font-size: 2em;
+    color: #303030;
+}
+
+.contact_icons:hover {
+    color: firebrick;
 }
