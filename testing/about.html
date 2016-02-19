@@ -30,30 +30,22 @@
                 $("#about").addClass("active");
             });
         </script>
-        <style></style>
+        <style>
+            body {
+                background: darkgray; /* For browsers that do not support gradients */
+                background: -webkit-linear-gradient(left top, darkgray, lightgray); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(bottom right, darkgray, lightgray); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(ottom right, darkgray, lightgray); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(to bottom right, lightgray, yellow); /* Standard syntax */
+            }
+        </style>
+        
 
     </head>
 
     <body>
-
-         <div class="navbar navbar-default">
-            <div class="nav-container">
-                <div class="navbar-header">
-                    <a href="index.html" class="navbar-brand">MJWasbrough.com</a>
-
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" />
-
-                    <span class="sr-only">Toggle navigation</span>
-
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-
-                </div>
-
-                <div class="collapse navbar-collapse" id="navigation">
-                </div>
-            </div>
+        
+        <div class="navbar navbar-default" id="navigation">
         </div>
 
 
