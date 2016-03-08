@@ -2,8 +2,50 @@ body {
     text-align: justify;
     font-family: Ariel, Helvetica, sans-serif;
     color: #303030;
+    text-shadow: 1px 1px 1px white;
     margin: 0;
     padding: 0;
+    height: 100vh;
+}
+
+#bodyBackground {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#707070+0,a0a0a0+5,c9c9c9+15,efefef+35,ffffff+50,efefef+65,c9c9c9+85,a0a0a0+95,707070+100 */
+    background: #707070; /* Old browsers */
+    background: -moz-linear-gradient(top,  #707070 0%,#a0a0a0 5%,#c9c9c9 15%,#efefef 35%,#ffffff 50%,#efefef 65%,#c9c9c9 85%,#a0a0a0 95%,#707070 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #707070 0%,#a0a0a0 5%,#c9c9c9 15%,#efefef 35%,#ffffff 50%,#efefef 65%,#c9c9c9 85%,#a0a0a0 95%,#707070 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #000000 0%,#424242 5%,#707070 15%,#efefef 35%,#ffffff 50%,#efefef 65%,#707070 85%,#424242 95%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707070', endColorstr='#707070',GradientType=0 ); /* IE6-9 */
+    position: fixed;
+    top: 0;
+    
+}
+
+#container {
+    z-index: 999;
+}
+
+.navbar {
+    z-index: 999
+}
+
+.navbar-default {
+    background-image: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+    background-image: none;
+    background-color: darkgray;
+}
+
+.navbar-default a{
+    color: white !important;
+    text-shadow: 1px 1px 1px #303030 !important;
 }
 
 .break {
