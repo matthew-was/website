@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <title>JQuery Project</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    
+    <link rel="stylesheet" href="projectCSS.css">
+    <script src="projectJS.js"></script>
+    
+    <script>
+        $(function () {
+        });
+    </script>
+    
+    <style type="text/css">
+    </style>
+    
+</head>
+<body>
+    
+    <div id="topbar">
+        
+        <div id="headDiv">
+            <p>CodePlayer</p>
+        </div>
+        
+        <div id="views">
+            <input type="checkbox" class="cbox" id="cb1" checked=true /><label for="cb1">HTML</label>
+            <input type="checkbox" class="cbox" id="cb2" /><label for="cb2">CSS</label>
+            <input type="checkbox" class="cbox" id="cb3" /><label for="cb3">JS</label>
+            <input type="checkbox" class="cbox" id="cb4" checked=true /><label for="cb4">Result</label>
+        </div>
+        
+        <div id="buttonDiv">
+            <button type="submit" id="runButton">Run</button>
+        </div>
+        
+    </div>
+    
+    <div class="break"></div>
+    
+    <div class="codeBox" id="htmlBox">
+        
+        <div class="codeLabel">HTML</div>
+        
+        <textarea id="htmlCode">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CodePlayer</title>
+</head>
+<body>
+
+</body>
+</html>
+        </textarea>
+        
+    </div>
+
+    <div class="codeBox" id="CSSBox">
+        
+        <div class="codeLabel">CSS</div>
+        
+        <textarea id="cssCode"></textarea>
+        
+    </div>
+
+    <div class="codeBox" id="JSBox">
+        
+        <div class="codeLabel">JS</div>
+        
+        <textarea id="jsCode"></textarea>
+        
+    </div>
+
+    <div class="codeBox" id="resultBox">
+        
+        <div class="codeLabel">Result</div>
+        
+        <iframe id="resultFrame"></iframe>
+        
+    </div>
+
+     
+    <script>
+    </script>
+
+</body>
+</html>

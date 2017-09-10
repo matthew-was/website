@@ -1,0 +1,452 @@
+    
+<!doctype html>
+<html>
+<head>
+    <title>BBC News - UK</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style type="text/css">
+        
+        body {
+            margin: 0px;
+            font-family: arial,helvetica,sans-serif;
+            color: white;
+        }
+        
+        #newshead {
+            background-image: url("images/red-masthead.png");
+            width: 100%;
+            height: 128px;
+            background-position: center;
+        }
+        
+        #topbar{
+            width: 100%;
+            height: 39px;
+        }
+                
+        .fixedwidth1 {
+            position: relative;
+            z-index: 5;
+            width:960px;
+            margin:0 auto; 
+        }
+        
+        #logodiv {
+            padding-left: 10px;
+            padding-top: 7px;
+            padding-bottom: 4px;
+            padding-right: 7px;
+            float: left;
+            border-right: 1px solid #8E1212;
+        }
+        
+        #navspacer {
+            float:left;
+            width: 200px;
+            height:39px;
+            border-right: 1px solid #8E1212;
+        }
+        
+        #navlist {
+            float:left;
+            margin-right: 8px;
+        }
+        
+        #navlist ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #navlist li {
+            float: left;
+            list-style: none;
+            font-size: 0.9em;
+            font-weight: bold;
+            border-right: 1px solid #8E1212;
+            padding: 10px 15px 10px 15px;
+        }
+        
+        #navsearch {
+            float:left;
+            margin-top: 8px;
+        }
+        
+        #searchbox {
+            border: none;
+            border-left: 8px solid #fff;
+            border-right: 29px solid #fff;
+            width: 100px;
+            height: 20px;
+            font-weight: bold;
+            padding:0;
+            margin: 0;
+        }
+        
+        #search_submit {
+            position: relative;
+            z-index: 1;
+            bottom: -3px;
+            right: 20px;
+            margin: 0;
+            padding: 0px;
+            background: 0;
+            border: 0;
+            cursor: pointer;
+        }
+
+        #topback {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 5;
+            background-color: #000;
+            opacity: 0.2;
+            width: 100%;
+            height: 39px;
+        }
+        
+        
+        .break{
+            clear: both;
+            padding: 0;
+            margin: 0;
+        }
+
+        .fixedwidth {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        
+        #newsheading {
+            float: left;
+            margin: 0;
+            padding: 0;
+            font-size: 2.9em;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        
+        #uk {
+            font-size:0.6em;
+            padding-left: 10px;
+        }
+        
+        #rss {
+            float: right;
+            margin-left: 30px;
+            margin-right: 10px;
+            margin-top: 40px;
+        }
+                
+        #rssimg {
+            height: 13px;
+            width: 13px;
+            padding-left: 5px;
+        }
+              
+        #topicmenu ul{
+            background-color: #3E0C0D;
+            margin: 0;
+            padding: 5px 0 5px 0;
+            height: 15px;
+        }
+        
+        #topicmenu li {
+            list-style: none;
+            font-size: 0.8em;
+            border-right: 1px solid #8E1212;
+            padding-left: 6px;
+            padding-right: 6px;
+            float: left;
+        }
+        
+        #selected {
+            background-color: #EDEDED;
+            color: #666666;
+            height: 20px;
+            position: relative;
+            top: -5px;
+            padding-top: 5px
+        }
+        
+        #content {
+            color: #535353;
+            width: 100%;
+            font-size: 0.8em;
+        }
+        
+        .bold {
+            font-weight: bold;
+        }
+        
+        .leftcontent {
+            width: 640px;
+            float: left;
+        }
+        
+        .rightcontent {
+            width: 320px;
+            float: right;
+        }
+        
+        .leftcontent h1 {
+            color: #1F4F82;
+            font-size: 2.3em;
+        }
+        
+        #headlineimage {
+            float: left;
+            padding-right: 8px;
+        }
+        
+        .newsitem {
+            padding-right: 8px;
+            font-size: 1.1em;
+        }
+        
+        .newsitem a {
+            color: #1F4F82;
+            text-decoration: none;
+        }
+        
+        .newsitem a:hover {
+            text-decoration: underline;
+        }
+        
+        .newsitem img {
+            width: 14px;
+            height: 14px;
+        }
+        
+        .links {
+            line-height: 1.6em;
+        }
+        
+        #watchlisten {
+            background-color: #EEEEEE;
+            width: 100%;
+            height: 195px;
+            margin-top: 15px;
+        }
+        
+        #watchlisten h2 {
+            color: #505050;
+            padding: 8px;
+            font-size: 1.8em;
+            margin-bottom: 0;
+        }
+        
+        #wlimages {
+            height: 77px;
+            background-color: white;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #wlimages img {
+            height: 77px;
+            float: left;
+            margin-top: 0;
+            padding-top: 0;
+            margin-left: 0.5px;
+            margin-right: 0.5px;
+        }
+        
+        .imagelink {
+            background-color: #D1700E;
+            border-left: 1px solid white;
+            float: left;
+            padding: 5px 7px 10px 7px;
+            width: 122px;
+        }
+        
+        .imagelink a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.95em;
+        }
+        
+        .imagelink a:hover {
+            text-decoration: underline;
+        }
+        
+        #wllive {
+            padding: 4px 10px 0 10px;
+        }
+        
+        #wllive img {
+            height: 15px;
+            position: relative;
+            top: 4px
+        }
+        
+        #wllive a {
+            text-decoration: none;
+            color: #1F4F82;
+            font-weight: bold;
+        }
+        
+        #wllive a:hover {
+            text-decoration: underline;
+        }
+              
+    </style>
+    
+</head>
+<body>
+    <div id="container">
+        
+        <div id="newshead">
+        
+            <div id="topbar">
+
+                <div id="topback"></div>
+
+                <div class="fixedwidth1">
+
+                    <div id="logodiv">
+                        <img src="images/bbc_logo.png" style="height:24px">
+                    </div>
+
+                    <div id="navspacer"></div>
+
+                    <div id="navlist">
+                        <ul>
+                            <li>News</li>
+                            <li>Sport</li>
+                            <li>Weather</li>
+                            <li>iPlayer</li>
+                            <li>TV</li>
+                            <li>Radio</li>
+                            <li>More</li>
+                        </ul>
+                    </div>
+                    <div id="navsearch">
+                        <input type="text" id="searchbox" placeholder="Search">
+                        <button type="submit" id="search_submit">
+                            <span>
+                                <img src="images/bbc_search.png" width="13px" height="13px">
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="break"></div>
+
+            <div id="newsbar">
+
+                <div class="fixedwidth">
+
+                    <div id="newsheading">NEWS <span id="uk">UK</span></div>
+
+                    <div id="rss">RSS<img src="images/rss.png" id="rssimg"/></div>
+
+                    <div class="break"></div>
+
+                    <div id="topicmenu">
+                        <ul>
+                            <li>Home</li>
+                            <li>World</li>
+                            <li id="selected">UK</li>
+                            <li>England</li>
+                            <li>N. Ireland</li>
+                            <li>Scotland</li>
+                            <li>Wales</li>
+                            <li>Business</li>
+                            <li>Politics</li>
+                            <li>Health</li>
+                            <li>Education</li>
+                            <li>Sci/Environment</li>
+                            <li>Technology</li>
+                            <li style="border-right:none">Entertainment & Arts</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+           
+        </div>
+        
+        <div class="break"></div>
+        
+        <div id="content">
+            
+            <div class="fixedwidth">
+                
+                <div class="leftcontent">
+                    
+                    <p><span class="bold">2 April 2014</span> Last updated at 14:13</p>
+                    
+                    <h1>Pollution to spread across England</h1>
+                    
+                    <img src="images/headline_image.jpg" id="headlineimage" />
+                    
+                    <div class="newsitem">
+                    
+                        <p>Health warnings have been issued by the government as pollution spreading across England is forecast to hit high levels.</p>
+                        
+                        <p class=links>
+                            <a href="http://web.archive.org/news/uk-26848488" ><img src="images/triangle.png" /> Why are pollution levels so high?</a>
+                            <br>
+                            <a href="http://web.archive.org/news/uk-26848488" ><img src="images/triangle.png" /> Saharan dust visible on cars</a>
+                            <br>
+                            <a href="http://web.archive.org/news/uk-26848488" ><img src="images/triangle.png" /> How Saharan dust reached the UK Watch What will pollution do to us?</a>
+                            <br>
+                            <a href="http://web.archive.org/news/uk-26848488" ><img src="images/sound.png" /> Air pollution a 'serious issue'</a>
+
+                        </p>
+                        
+                    </div>
+                
+                </div>
+                
+                <div class="rightcontent">
+                    
+                    <div id="watchlisten">
+                        
+                        <h2 id="wlhead">Watch/Listen</h2>
+                        
+                        <div id="wlimages">
+                            
+                            <img src="images/wl1.png" style="margin-left:0;"/>
+                            <img src="images/wl2.png" />
+                            <img src="images/wl3.png" style="margin-right:0;"/>
+                            
+                            <div class="break"></div>
+                            
+                            <div class="imagelink" style="border-left:0;"><a href="">Titanic letter could fetch £100,000</a></div>
+                            <div class="imagelink"><a href="">The housing estate delivering its own mail</a></div>
+                            <div class="imagelink" style="width:39px; padding-right:0;"><a href="">Hillsbo notes </a></div>
+                            
+                        </div>
+                        
+                        <div class="break"></div>
+                        
+                        <div id="wllive">
+                            
+                            <img src="images/live.png" />
+                            
+                            <a href=""> BBC News Channel</a>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
