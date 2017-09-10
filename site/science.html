@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Matthew Wasbrough - Science</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="http://www.mjwasbrough.com/_resources/general.css" />
+
+    <script>
+      $(function() {
+        $('science').addClass("active");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="navbar navbar-default" id="navigation">
+      <div class="nav-container">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand">MJWasbrough.com</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li id="about">
+              <a href="about.html">About Me</a>
+            </li>
+            <li id="webdev">
+              <a href="programming.html">Programming</a>
+            </li>
+            <li id="science">
+              <a href="science.html">Science</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      
+      <div class="main">
+        
+          <script>
+  $(function() {
+    $("#science").addClass("active");
+
+    $( "#accordion" ).accordion({
+      collapsible: true,
+      active: false,
+      heightStyle: "content",
+      activate: function() {
+        if (typeof($("#accordion").accordion("option", "active")) == "number") {
+          $("#accordionHead").html("Click here to hide my thesis abstract");
+        } else {
+          $("#accordionHead").html("Click here to view my thesis abstract");
+        }
+      },
+    });
+  });
+</script>
+<div>
+<h2>My Science</h2>
+<br />
+  <p>I completed my doctorate in Chemistry in 2011 at the University of Bath under <a href="http://www.bath.ac.uk/chemistry/contacts/academics/karen_edler/" class="link">Dr. Karen Edler</a>. Prior to this I was awarded a MChem in Chemistry with North American Study from the University of Bath, although this was started at the University of Exeter. My North American  study year was completed at the University of Southern Mississippi.</p>
+  <p>My doctoral thesis was titled <span style="font-weight:bold;">"Nanostructured hydrogel films for encapsulation and release"</span> and is freely availale on the <a href="http://opus.bath.ac.uk/27931/" class="link">University of Bath Website.</a></p>
+  <div id="accordion">
+    <h5 id="accordionHead">Click here to view my thesis abstract</h5>
+    <div>
+      <p>We have been investigating solutions of surfactants and polyelectrolytes that are able to spontaneously form micron thick hydrogel films at the air/solution interface. Previous research within the group has shown that the surfactant can act as a templating agent for the polymer hydrogel, leading to well ordered mesostructured films similar to those seen in surfactant templated inorganic materials or polymeric layer-by-layer films, which have both been highly active areas of research over the past 20 years. This project built on the previous research within the group to develop a greater understanding of these films and how they may be controlled and used for real world applications.</p>
+      <p>This thesis concentrates on two areas; the first is films made from a cationic surfactant/polymer system and the second from a cat-anionic surfactant/polymer system. Using the cationic surfactant/polymer system, we built on the previous research by altering the head group area to tail volume ratio of the surfactants being used to allow control over the final mesostructure within the films. Small angle neutron scattering (SANS) was used to study the bulk solution while neutron and x-ray reflectivity and grazing incidence diffraction were used to study the films. Using this system we have also developed the previous work, studying the incorporation of sparingly soluble species in films, by studying the encapsulation of hydrophobic and amphiphilic species into the surfactant micelles and therefore into the films as a function of micelle and film structure. We have also studied, using Fluorescence spectroscopy, the subsequent release of these species from the films.</p>
+      <p>The cat-anionic surfactant/polymer system was discovered more recently and therefore has not had as much previous research performed on it. It is of particular interest because it allows films to be formed from a variety of different polymers where the cationic system currently has only been found to form films with one polymer. Using this cat-anionic system we have studied the surfactant interactions in the bulk with SANS, ultra-SANS and spin-echo-SANS to determine the structure over a wide length range. This data is compared to cryo-SEM results. In particular cryo-SEM and USANS have been used to validate modelling from the new technique of SESANS. We then studied the film formation with x-ray and neutron reflectivity. As well as forming from a wider range of polymers, these films are much thicker and more robust, which may be due to the larger scale aggregates formed in solution.</p>
+    </div>
+  </div>
+  <p>Here are links to my online science presence. If you have any questions about any of my work please feel free to contact me using the links at the bottom.</p>
+  <h3>Websites listing my publications</h3>
+  <p>
+    As I am not actively pursuing a scientific career I am not publishing and am not keeping a list of the publications I am featured on. There are projects I have been involved in that I am aware contain unpublished work, as this becomes published the following resources would be updated faster than a list I create.
+  </p>
+  <p><a href="https://scholar.google.co.uk/citations?hl=en&user=EES_xVoAAAAJ" class="link">Google Scholar</a></p>
+  <p><a href="https://www.researchgate.net/scientific-contributions/15274141_Matthew_J_Wasbrough" class="link">ResearchGate</a></p>
+  <p><a href="http://www.researcherid.com/rid/H-2252-2013" class="link" id="ri">ResearcherID</a></p>
+  <p><a href="http://orcid.org"><img alt="ORCID logo" src="http://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16" /></a> <a href="http://orcid.org/0000-0002-3225-7447" class="link" style="vertical-align:top;">http://orcid.org/0000-0002-3225-7447</a></p>
+</div>
+
+          <div>  
+  <h3>Contact me</h3>
+  <p>
+    <a href="mailto:matthew@mjwasbrough.com" class="link">
+      <i class="fa fa-at contact_icons">
+      </i>
+    </a>
+    &nbsp;
+    <a href="https://twitter.com/MJWasbrough">
+      <i class="fa fa-twitter-square contact_icons">
+      </i>
+    </a>
+    &nbsp;
+    <a href="https://uk.linkedin.com/pub/matthew-wasbrough/45/3a/674">
+      <i class="fa fa-linkedin-square contact_icons">
+      </i>
+    </a>
+  </p>
+</div>
+
+        
+      </div>
+    </div>
+    <div id="bodyBackground"></div>
+  </body>
+</html>
